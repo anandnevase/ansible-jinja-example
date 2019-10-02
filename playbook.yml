@@ -1,0 +1,8 @@
+- hosts: localhost
+  vars:
+    PORT: 10001
+    CLUSTER: MyCluster
+  tasks:
+    - template:
+        src: template/cluster.j2
+        dest: /tmp/cluster.txt
